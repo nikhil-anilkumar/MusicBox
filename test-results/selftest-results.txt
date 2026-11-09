@@ -1,0 +1,44 @@
+MusicBox self-test on iPod touch iOS 6.1.3
+11 file tracks, 0 library songs
+PASS decode 05-wav.wav [WAV] 44100Hz 2ch 6.00s audio (header 264600 frames, got 264600) peak 14975 seek ok in 0.01s (523x realtime)
+PASS info   05-wav.wav PCM integer, little-endian | WAVE | 44100 Hz | 16-bit | 1411 kbps | iOS Core Audio (ExtAudioFile)
+PASS decode 06-aiff.aiff [AIFF] 44100Hz 2ch 6.00s audio (header 264600 frames, got 264600) peak 14975 seek ok in 0.01s (444x realtime)
+PASS info   06-aiff.aiff PCM integer, big-endian | AIFF | 44100 Hz | 16-bit | 1411 kbps | iOS Core Audio (ExtAudioFile)
+PASS decode 07-caf.caf [CAF] 44100Hz 2ch 6.00s audio (header 264600 frames, got 264600) peak 14975 seek ok in 0.01s (617x realtime)
+PASS info   07-caf.caf PCM integer, little-endian | Core Audio Format (CAF) | 44100 Hz | 16-bit | 1411 kbps | iOS Core Audio (ExtAudioFile)
+PASS decode 11-aac-adts.aac [AAC] 44100Hz 2ch 6.04s audio (header 266240 frames, got 266240) peak 14975 seek ok in 0.06s (102x realtime)
+PASS info   11-aac-adts.aac AAC-LC | ADTS (raw AAC) | 44100 Hz | --bit | 130 kbps | iOS Core Audio (ExtAudioFile)
+PASS decode 01-mp3-stereo.mp3 [MP3] 44100Hz 2ch 6.03s audio (header 266112 frames, got 266112) peak 14526 seek ok in 0.07s (86x realtime)
+PASS info   01-mp3-stereo.mp3 MPEG-1 Layer 3 (MP3) | MP3 | 44100 Hz | --bit | 192 kbps | iOS Core Audio (ExtAudioFile)
+PASS decode 02-mp3-mono-22k.mp3 [MP3] 22050Hz 1ch 6.06s audio (header 133632 frames, got 133632) peak 19896 seek ok in 0.02s (257x realtime)
+PASS info   02-mp3-mono-22k.mp3 MPEG-1 Layer 3 (MP3) | MP3 | 22050 Hz | --bit | 64 kbps | iOS Core Audio (ExtAudioFile)
+PASS decode 03-aac.m4a [AAC] 44100Hz 2ch 6.00s audio (header 264600 frames, got 264600) peak 15008 seek ok in 0.05s (109x realtime)
+PASS info   03-aac.m4a AAC-LC | MPEG-4 Audio (M4A) | 44100 Hz | --bit | 161 kbps | iOS Core Audio (ExtAudioFile)
+PASS decode 04-alac.m4a [ALAC] 44100Hz 2ch 6.00s audio (header 264600 frames, got 264600) peak 14975 seek ok in 0.08s (76x realtime)
+PASS info   04-alac.m4a Apple Lossless (ALAC) | MPEG-4 Audio (M4A) | 44100 Hz | 16-bit | 156 kbps | iOS Core Audio (ExtAudioFile)
+PASS decode 08-flac-16bit.flac [FLAC] 44100Hz 2ch 6.00s audio (header 264600 frames, got 264600) peak 14975 seek ok in 0.04s (169x realtime)
+PASS info   08-flac-16bit.flac FLAC (Free Lossless Audio Codec) | FLAC | 44100 Hz | 16-bit | 115 kbps | dr_flac
+PASS decode 09-flac-24bit-96k.flac [FLAC] 96000Hz 2ch 6.00s audio (header 576000 frames, got 576000) peak 14975 seek ok in 0.08s (77x realtime)
+PASS info   09-flac-24bit-96k.flac FLAC (Free Lossless Audio Codec) | FLAC | 96000 Hz | 24-bit | 570 kbps | dr_flac
+PASS decode 10-ogg-vorbis.ogg [OGG] 48000Hz 2ch 6.00s audio (header 288000 frames, got 288000) peak 15115 seek ok in 0.16s (37x realtime)
+PASS info   10-ogg-vorbis.ogg Vorbis | Ogg | 48000 Hz | --bit | 30 kbps | stb_vorbis | enc Lavf62.12.103
+PASS songs: all 11 shown
+PASS songs: Lossless scope 6 (expected 6)
+PASS songs: Lossy scope 5 (expected 5)
+PASS songs: format filter FLAC 2 (expected 2)
+PASS songs: search "mp3" 2 (expected 2)
+PASS songs: sort by duration is ascending
+PASS files: 17 entries listed
+PASS play   05-wav.wav advanced 2.00s in 2.0s wall (playing=1)
+PASS play   06-aiff.aiff advanced 2.00s in 2.0s wall (playing=1)
+PASS play   07-caf.caf advanced 2.00s in 2.0s wall (playing=1)
+PASS play   11-aac-adts.aac advanced 2.00s in 2.0s wall (playing=1)
+PASS play   01-mp3-stereo.mp3 advanced 2.00s in 2.0s wall (playing=1)
+PASS play   02-mp3-mono-22k.mp3 advanced 2.00s in 2.0s wall (playing=1)
+PASS play   03-aac.m4a advanced 2.00s in 2.0s wall (playing=1)
+PASS play   04-alac.m4a advanced 2.00s in 2.0s wall (playing=1)
+PASS play   08-flac-16bit.flac advanced 2.00s in 2.0s wall (playing=1)
+PASS play   09-flac-24bit-96k.flac advanced 2.00s in 2.0s wall (playing=1)
+PASS play   10-ogg-vorbis.ogg advanced 2.00s in 2.0s wall (playing=1)
+PASS auto-advance to next track (now: 06-aiff.aiff)
+RESULT: 41 passed, 0 failed

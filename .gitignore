@@ -1,0 +1,12 @@
+# Downloaded toolchain + SDK (~730 MB) — recreate with tools/setup-toolchain.sh
+/toolchain/
+
+# Build output
+/MusicBox/build/
+*.ipa
+
+# Generated test audio — recreate with tools/make-testmedia.sh
+/testmedia/
+
+# Raw device logs
+/test-results/*syslog*.txt

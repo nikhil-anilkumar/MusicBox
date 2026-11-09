@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key><string>en</string>
+	<key>CFBundleDisplayName</key><string>MusicBox</string>
+	<key>CFBundleExecutable</key><string>MusicBox</string>
+	<key>CFBundleIdentifier</key><string>com.nikhil.musicbox</string>
+	<key>CFBundleInfoDictionaryVersion</key><string>6.0</string>
+	<key>CFBundleName</key><string>MusicBox</string>
+	<key>CFBundlePackageType</key><string>APPL</string>
+	<key>CFBundleShortVersionString</key><string>1.0</string>
+	<key>CFBundleVersion</key><string>1</string>
+	<key>CFBundleSupportedPlatforms</key><array><string>iPhoneOS</string></array>
+	<key>CFBundleIconFiles</key>
+	<array><string>Icon.png</string><string>Icon@2x.png</string><string>Icon-Small.png</string><string>Icon-Small@2x.png</string></array>
+	<key>LSRequiresIPhoneOS</key><true/>
+	<key>MinimumOSVersion</key><string>6.0</string>
+	<key>UIDeviceFamily</key><array><integer>1</integer></array>
+	<key>UIRequiredDeviceCapabilities</key><array><string>armv7</string></array>
+	<key>UISupportedInterfaceOrientations</key><array><string>UIInterfaceOrientationPortrait</string></array>
+	<key>UIStatusBarStyle</key><string>UIStatusBarStyleBlackOpaque</string>
+	<key>UIBackgroundModes</key><array><string>audio</string></array>
+	<key>UIFileSharingEnabled</key><true/>
+	<key>UIPrerenderedIcon</key><true/>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeName</key><string>Audio</string>
+			<key>CFBundleTypeRole</key><string>Viewer</string>
+			<key>LSHandlerRank</key><string>Alternate</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>public.audio</string>
+				<string>public.mp3</string>
+				<string>public.mpeg-4-audio</string>
+				<string>com.apple.m4a-audio</string>
+				<string>public.aiff-audio</string>
+				<string>com.microsoft.waveform-audio</string>
+				<string>com.apple.coreaudio-format</string>
+				<string>org.xiph.flac</string>
+				<string>org.xiph.ogg-vorbis</string>
+			</array>
+		</dict>
+	</array>
+	<key>UTImportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeIdentifier</key><string>org.xiph.flac</string>
+			<key>UTTypeDescription</key><string>FLAC audio</string>
+			<key>UTTypeConformsTo</key><array><string>public.audio</string></array>
+			<key>UTTypeTagSpecification</key>
+			<dict><key>public.filename-extension</key><array><string>flac</string></array>
+			<key>public.mime-type</key><array><string>audio/flac</string><string>audio/x-flac</string></array></dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key><string>org.xiph.ogg-vorbis</string>
+			<key>UTTypeDescription</key><string>Ogg Vorbis audio</string>
+			<key>UTTypeConformsTo</key><array><string>public.audio</string></array>
+			<key>UTTypeTagSpecification</key>
+			<dict><key>public.filename-extension</key><array><string>ogg</string><string>oga</string></array>
+			<key>public.mime-type</key><array><string>audio/ogg</string><string>audio/vorbis</string></array></dict>
+		</dict>
+	</array>
+</dict>
+</plist>
